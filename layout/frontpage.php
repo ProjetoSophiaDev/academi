@@ -37,6 +37,7 @@ $templatecontext += $sliderconfig;
 $templatecontext += [
     'bodyattributes' => $bodyattributes,
     'jumbotronclass' => $jumbotronclass,
+    'slideshow' => $slideshow . $frontpage_numbers_layout,
 ];
 
 echo $OUTPUT->render_from_template('theme_academi/frontpage', $templatecontext);
