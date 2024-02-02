@@ -31,4 +31,4 @@ $templatecontext['numberusers'] = $DB->count_records('user', array('deleted' => 
 $templatecontext['numbercourses'] = $DB->count_records('course', array('visible' => 1)) - 1;
 $templatecontext['numberactivities'] = $DB->count_records('course_modules');
 
-$frontpage_numbers_layout = $OUTPUT->render_from_template('theme_eguru/frontpage_numbers', $templatecontext);
+$frontpage_numbers_layout = $OUTPUT->render_from_template('theme_academi/frontpage_numbers', $templatecontext);
