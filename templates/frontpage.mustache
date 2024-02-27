@@ -126,6 +126,33 @@
                     {{/hasblocks}}
                 </div>
                 {{{ output.full_header }}}
+
+                {{ #frontpagenumbers }}
+                    <div class="container frontpage-numbers">
+	                    <h2 id="numerosdoportal">Números do Portal</h2>
+                        <div class="row">
+       
+                            <div class="col-sm number" id="conteudocontador">
+                                <h3 class="numerocontador">{{{ numberusers }}}</h3>
+				                <span class="fa fa-users fa-2x"><span id="descricaocontador"> Usuários</span></span>
+            
+                             </div>
+
+                         <div class="col-sm number" id="conteudocontador">
+			                    <h3 class="numerocontador">{{{ numbercourses }}}</h3>
+                                <span class="fa fa-tasks fa-2x"><span id="descricaocontador"> Cursos</span></span>
+
+                         </div>
+
+                         <div class="col-sm number" id="conteudocontador">
+			                    <h3 class="numerocontador">{{{ numberactivities }}}</h3>
+                                <span class="fa fa-pencil fa-2x"><span id="descricaocontador"> Atividades</span></span>
+				
+                             </div>
+                        </div>
+                    </div>
+                {{ /frontpagenumbers }}
+
                 {{#secondarymoremenu}}
                     <div class="secondary-navigation d-print-none">
                         {{> core/moremenu}}
