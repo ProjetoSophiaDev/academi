@@ -33,6 +33,7 @@ $PAGE->requires->js_call_amd('theme_academi/frontpage', 'init');
 $bodyattributes = $OUTPUT->body_attributes($extraclasses);
 // Jumbotron class.
 $jumbotronclass = (!empty(theme_academi_get_setting('jumbotronstatus'))) ? 'jumbotron-element' : '';
+$slideshow = general();
 // Slide show contnet added in the templatecontext.
 $templatecontext += $sliderconfig;
 $templatecontext += [
