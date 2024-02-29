@@ -293,8 +293,11 @@
 
 @media (max-width: 767px) {
     .jumbotron-block .inner-wrap {
-        background-color: rgba(255, 255, 255, .2);
+        background-color: rgba(34,56,111,.7);
         text-align: center;
+        h2 {
+            color: $secondary;
+        }
         .desc-wrap {
             padding: 0 0 10px;
         }
